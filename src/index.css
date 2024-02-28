@@ -65,6 +65,6 @@ html, body{
 /*--- BODY TEXT STYLES ---*/
 #intro-text, #section-two-text, #section-three-text, #section-four-text, #section-five-text{
     text-align: center;
-    padding: 10px;
+    padding: 1px;
 }
 
