@@ -8,8 +8,7 @@ import { ThemeProvider } from '@emotion/react';
 const theme = createTheme({
     palette: {
         plavu: {
-          main: '#2ec4b6',
-          second: '#FF5733',
+          main: '#eebbc3',
         },
     },
 })
@@ -24,21 +23,9 @@ function BasicButtons({id, buttontext}) {
     );
 }
 
-function NavigationButton({ className, id }) {
-    return (
-        <ThemeProvider theme={theme}>
-            <Stack spacing={2} direction="row">
-                <Button variant="contained" color='plavu' disableElevation className={className} id={id}>
-                    Site Navigation
-                </Button>
-            </Stack>
-        </ThemeProvider>
-    );
-}
-
-function Header(){
+function StickyHeader(){
     return(
-        <AppBar position='sticky'>
+        <AppBar id='top-bar' position='sticky'>
             <Toolbar id='header-pane'>
                 <BasicButtons id='header-button-one' buttontext={'What is Automation?'}></BasicButtons>
                 <BasicButtons id='header-button-two' buttontext={'Why Automate?'}></BasicButtons>
@@ -54,10 +41,8 @@ root.render(
 
     <>
         {/*top container for button navigation*/}
-        <div className='top-button-nav'>
-            <Header></Header>
-        </div>
-
+        <StickyHeader></StickyHeader>
+           
         {/*top container for site title*/}
         <div id='header-content' className='top-container'>
                 <h1 class="main-title">Swiss Automation Consulting</h1>
@@ -65,10 +50,54 @@ root.render(
 
         {/* container for site body*/}
         <div className='body-container'>
-            <div id='body-content' className='content-container'>
-                <div className='body-text-container'>
+            <div id='body-content'>
+                <div id='intro-section'>
                     <div id='intro-text'>
                         <p class="body-subtext">Do you or your business have tedious and repetitive tasks that consume far too much of your time?<br></br> Please continue reading to find out if Swiss Consultants can help you to simplify your everyday tasks through automation programming.</p>
+                    </div>
+                </div>
+
+                <div id='section-two'>
+                    <div id='section-two-text'>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                    </div>
+                </div>
+
+                <div id='section-three'>
+                    <div id='section-three-text'>
+                        <p>Tis really just some text for testin in sexy sec 3 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
                     </div>
                 </div>
             </div>

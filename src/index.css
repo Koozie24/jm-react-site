@@ -1,35 +1,59 @@
+/*--- CLEAR BROWSER SETTINGS AND SET DEFAULT H/W---*/
 html, body{
     font-family: "Lucida Console", "Courier New", monospace;
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
-    background-color: slategray;
 }
 
+
+/*--- INTRO BANNER STYLES ---*/
 .top-container{
     text-align: center;
     /* background-color: #2ec4b6; */
-    color: white;
-    background-color: midnightblue;
-    border-bottom: 5px solid purple;
-    border-top: 5px solid purple;
+    color: #fffffe;
+    background-color: #b8c1ec;
+    border-bottom: 5px solid #121629;
+    border-top: 5px solid #121629;
 }
 
+
+/*--- TOP NAV STYLES ---*/
+#top-bar{
+    z-index: 1100;
+    background-color: #232946;
+}
 #header-pane{
     align-self: center;
+    background-color: #232946;
+}
+.top-button-nav{
+    background-color: #232946;
 }
 
+
+/*--- NAV BUTTON STYLES ---*/
 #header-button-one, #header-button-two, #header-button-three,
 #header-button-four{
     width: 15vw;
     margin: 2%;
-    color: blue;
+    color: #232946;
 }
 
-#intro-text{
-    text-align: center;
+
+/*---BODY SECTION STYLES ---*/
+#intro-section, #section-three{
+    background-color: #232946;
+    color: #b8c1ec;
 }
-.body-subtext{
+#section-two{
+    background-color: #d4d8f0;
+    color: #232946;
+}
+
+
+/*--- BODY TEXT STYLES ---*/
+#intro-text, #section-two-text, #section-three-text{
+    text-align: center;
     padding: 10px;
 }
+
