@@ -33,18 +33,18 @@ html, body{
 
 /*--- NAV BUTTON STYLES ---*/
 #header-button-one, #header-button-two, #header-button-three,
-#header-button-four{
+#header-button-four, #home-button{
     width: 15vw;
+    height: 2.5vw;
     margin: 2%;
     color: #232946;
     border: 1px solid #121629;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #121629;
 }
 
 #home-button{
     width: 10vw;
-    margin: 2%;
-    color: #232946;
-    border: 1px solid #121629;
 }
 
 /*---BODY SECTION STYLES ---*/

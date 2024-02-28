@@ -5,6 +5,7 @@ import { AppBar, Toolbar, Button, Stack, Box} from '@mui/material';
 import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@emotion/react';
 import HomeIcon from '@mui/icons-material/Home';
+import DialpadIcon from '@mui/icons-material/Dialpad';
 
 {/*---  ---*/}
 const theme = createTheme({
@@ -24,17 +25,26 @@ function BasicButtons({id, buttontext}) {
     return (
         <ThemeProvider theme={theme}>
             <Stack spacing={2} direction="row">
-                <Button id={id} variant="contained" color='plavu'>{buttontext}</Button>
+                <Button id={id} variant="contained" color='plavu' sx={{textTransform: 'none'}}>{buttontext}</Button>
             </Stack>
         </ThemeProvider>
     );
 }
 
-function HomeButton({id, buttontext}){
+function HomeButton({id, buttontext, icontype}){
+    let Icon;
+
+    if(icontype === 'HomeIcon') {
+        Icon = HomeIcon;
+    }
+    else if(icontype =='DialPadIcon'){
+        Icon = DialpadIcon;
+    }
+
     return (
         <ThemeProvider theme={theme}>
             <Stack spacing={2} direction="row">
-                <Button id={id} variant="contained" color='plavu' startIcon={<HomeIcon />}>{buttontext}</Button>
+                <Button id={id} variant="contained" color='plavu' startIcon={<Icon />} sx={{textTransform: 'none'}}>{buttontext}</Button>
             </Stack>
         </ThemeProvider>
     );
@@ -45,13 +55,12 @@ function StickyHeader(){
     return(
         <AppBar id='top-bar' position='sticky'>
             <Toolbar id='header-pane'>
-                <div id='home-box'>
-                    <HomeButton id='home-button' buttontext={'Home'}></HomeButton>
-                </div>
+                <HomeButton id='home-button' buttontext={'Home'} icontype={'HomeIcon'}></HomeButton>
                 <BasicButtons id='header-button-one' buttontext={'What is Automation?'}></BasicButtons>
                 <BasicButtons id='header-button-two' buttontext={'Why Automate?'}></BasicButtons>
                 <BasicButtons id='header-button-three' buttontext={'From'}></BasicButtons>
                 <BasicButtons id='header-button-four' buttontext={'Butts'}></BasicButtons>
+                <HomeButton id='home-button' buttontext={'Contact Us'} icontype={'DialPadIcon'}></HomeButton>
             </Toolbar>
         </AppBar>
     );
