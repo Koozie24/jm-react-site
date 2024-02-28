@@ -48,13 +48,13 @@ html, body{
 }
 
 /*---BODY SECTION STYLES ---*/
-#intro-section, #section-three{
+#intro-section, #section-three, #section-five{
     background-color: #232946;
     color: #b8c1ec;
     border-bottom: 2px solid #121629;
     border-top: 2px solid #121629;
 }
-#section-two{
+#section-two, #section-four{
     background-color: #d4d8f0;
     color: #232946;
     border-bottom: 2px solid #121629;
@@ -63,7 +63,7 @@ html, body{
 
 
 /*--- BODY TEXT STYLES ---*/
-#intro-text, #section-two-text, #section-three-text{
+#intro-text, #section-two-text, #section-three-text, #section-four-text, #section-five-text{
     text-align: center;
     padding: 10px;
 }

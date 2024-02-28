@@ -21,17 +21,17 @@ const theme = createTheme({
 })
 
 {/*--- Helper to create MUI buttons ---*/}
-function BasicButtons({id, buttontext}) {
+function BasicButtons({id, buttontext, section}) {
     return (
         <ThemeProvider theme={theme}>
             <Stack spacing={2} direction="row">
-                <Button id={id} variant="contained" color='plavu' sx={{textTransform: 'none'}}>{buttontext}</Button>
+                <Button id={id} variant="contained" color='plavu' sx={{textTransform: 'none'}} href={section}>{buttontext}</Button>
             </Stack>
         </ThemeProvider>
     );
 }
 
-function HomeButton({id, buttontext, icontype}){
+function HomeButton({id, buttontext, icontype, section}){
     let Icon;
 
     if(icontype === 'HomeIcon') {
@@ -44,7 +44,7 @@ function HomeButton({id, buttontext, icontype}){
     return (
         <ThemeProvider theme={theme}>
             <Stack spacing={2} direction="row">
-                <Button id={id} variant="contained" color='plavu' startIcon={<Icon />} sx={{textTransform: 'none'}}>{buttontext}</Button>
+                <Button id={id} variant="contained" color='plavu' startIcon={<Icon />} sx={{textTransform: 'none'}} href={section}>{buttontext}</Button>
             </Stack>
         </ThemeProvider>
     );
@@ -55,11 +55,11 @@ function StickyHeader(){
     return(
         <AppBar id='top-bar' position='sticky'>
             <Toolbar id='header-pane'>
-                <HomeButton id='home-button' buttontext={'Home'} icontype={'HomeIcon'}></HomeButton>
-                <BasicButtons id='header-button-one' buttontext={'What is Automation?'}></BasicButtons>
-                <BasicButtons id='header-button-two' buttontext={'Why Automate?'}></BasicButtons>
-                <BasicButtons id='header-button-three' buttontext={'From'}></BasicButtons>
-                <BasicButtons id='header-button-four' buttontext={'Butts'}></BasicButtons>
+                <HomeButton id='home-button' buttontext={'Home'} icontype={'HomeIcon'} section="#home-jump"></HomeButton>
+                <BasicButtons id='header-button-one' buttontext={'What is Automation?'} section="#jump-two"></BasicButtons>
+                <BasicButtons id='header-button-two' buttontext={'Why Automate?'} section="#jump-three"></BasicButtons>
+                <BasicButtons id='header-button-three' buttontext={'From'} section="#jump-four"></BasicButtons>
+                <BasicButtons id='header-button-four' buttontext={'Butts'} section="#jump-five"></BasicButtons>
                 <HomeButton id='home-button' buttontext={'Contact Us'} icontype={'DialPadIcon'}></HomeButton>
             </Toolbar>
         </AppBar>
@@ -71,12 +71,14 @@ root.render(
 
     <>
         {/*top container for button navigation*/}
+        <div id='home-jump'></div>
         <StickyHeader></StickyHeader>
-           
         {/*top container for site title*/}
         <div id='header-content' className='top-container'>
                 <h1 class="main-title">Swiss Automation Consulting</h1>
         </div>
+
+        <div id='jump-two'></div>
 
         {/* container for site body*/}
         <div className='body-container'>
@@ -108,8 +110,60 @@ root.render(
                     </div>
                 </div>
 
+                <div id='jump-three'></div>
                 <div id='section-three'>
                     <div id='section-three-text'>
+                        <h3>This is my Third Secton, whaddya think?</h3>
+                        <p>Tis really just some text for testin in sexy sec 3 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                    </div>
+                </div>
+
+                <div id='jump-four'></div>
+                <div id='section-four'>
+                    <div id='section-four-text'>
+                        <h3>This is my Third Secton, whaddya think?</h3>
+                        <p>Tis really just some text for testin in sexy sec 3 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                        <p>Tis really just some text for testin in sexy sec 2 </p>
+                    </div>
+                </div>
+
+                <div id='jump-five'></div>
+                <div id='section-five'>
+                    <div id='section-five-text'>
+                        <h3>This is my Third Secton, whaddya think?</h3>
                         <p>Tis really just some text for testin in sexy sec 3 </p>
                         <p>Tis really just some text for testin in sexy sec 2 </p>
                         <p>Tis really just some text for testin in sexy sec 2 </p>
