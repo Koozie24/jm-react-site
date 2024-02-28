@@ -6,6 +6,10 @@ import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@emotion/react';
 import HomeIcon from '@mui/icons-material/Home';
 import DialpadIcon from '@mui/icons-material/Dialpad';
+import Filter1Icon from '@mui/icons-material/Filter1';
+import Filter2Icon from '@mui/icons-material/Filter2';
+import Filter3Icon from '@mui/icons-material/Filter3';
+import Filter4Icon from '@mui/icons-material/Filter4';
 
 {/*---  ---*/}
 const theme = createTheme({
@@ -60,7 +64,22 @@ function StickyHeader(){
                 <BasicButtons id='header-button-two' buttontext={'Why Automate?'} section="#jump-three"></BasicButtons>
                 <BasicButtons id='header-button-three' buttontext={'From'} section="#jump-four"></BasicButtons>
                 <BasicButtons id='header-button-four' buttontext={'Butts'} section="#jump-five"></BasicButtons>
-                <HomeButton id='home-button' buttontext={'Contact Us'} icontype={'DialPadIcon'}></HomeButton>
+                <HomeButton id='contact-button' buttontext={'Contact Us'} icontype={'DialPadIcon'}></HomeButton>
+            </Toolbar>
+        </AppBar>
+    );
+}
+
+function MobileBar(){
+    return(
+        <AppBar id='top-bar-mob' position='sticky'>
+            <Toolbar id='header-pane-mob'>
+                <HomeButton id='home-button-mob' buttontext={''} icontype={'HomeIcon'} section="#home-jump"></HomeButton>
+                <HomeButton id='mob-button-one' buttontext={''} icontype={'Filter1Icon'} section="#jump-two"></HomeButton>
+                <HomeButton id='mob-button-two' buttontext={''} icontype={'Filter2Icon'} section="#jump-three"></HomeButton>
+                <HomeButton id='mob-button-three' buttontext={''} icontype={'Filter3Icon'} section="#jump-four"></HomeButton>
+                <HomeButton id='mob-button-four' buttontext={''} icontype={'Filter4Icon'} section="#jump-five"></HomeButton>
+                <HomeButton id='contact-button-mob' buttontext={''} icontype={'DialPadIcon'}></HomeButton>
             </Toolbar>
         </AppBar>
     );

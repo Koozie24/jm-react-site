@@ -33,7 +33,7 @@ html, body{
 
 /*--- NAV BUTTON STYLES ---*/
 #header-button-one, #header-button-two, #header-button-three,
-#header-button-four, #home-button{
+#header-button-four, #home-button, #contact-button{
     width: 15vw;
     height: 2.5vw;
     margin: 2%;
@@ -43,10 +43,30 @@ html, body{
     -webkit-text-stroke-color: #121629;
 }
 
-#home-button{
-    width: 10vw;
+#home-button, #contact-button{
+    width: 15vw;
 }
 
+@media (max-width: 1025px) {
+    #header-button-one, #header-button-two, #header-button-three,
+    #header-button-four, #home-button, #contact-button { /* Adjust the class name based on your actual button class */
+        padding: 25px;
+    }
+}
+
+@media (max-width: 426px) {
+    #header-button-one, #header-button-two, #header-button-three,
+    #header-button-four, #home-button, #contact-button { /* Adjust the class name based on your actual button class */
+        font-size: xx-small;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 400px){
+    #top-bar{
+        display: none;
+    }
+}
 /*---BODY SECTION STYLES ---*/
 #intro-section, #section-three, #section-five{
     background-color: #232946;
@@ -60,7 +80,6 @@ html, body{
     border-bottom: 2px solid #121629;
     border-top: 2px solid #121629;
 }
-
 
 /*--- BODY TEXT STYLES ---*/
 #intro-text, #section-two-text, #section-three-text, #section-four-text, #section-five-text{
