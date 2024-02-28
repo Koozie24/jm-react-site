@@ -1,6 +1,6 @@
 /*--- CLEAR BROWSER SETTINGS AND SET DEFAULT H/W---*/
 html, body{
-    font-family: "Lucida Console", "Courier New", monospace;
+    font-family: 'Lato', 'Helvetica', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -9,8 +9,9 @@ html, body{
 /*--- INTRO BANNER STYLES ---*/
 .top-container{
     text-align: center;
-    /* background-color: #2ec4b6; */
     color: #fffffe;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #121629;
     background-color: #b8c1ec;
     border-bottom: 5px solid #121629;
     border-top: 5px solid #121629;
@@ -19,7 +20,6 @@ html, body{
 
 /*--- TOP NAV STYLES ---*/
 #top-bar{
-    z-index: 1100;
     background-color: #232946;
 }
 #header-pane{
@@ -37,17 +37,28 @@ html, body{
     width: 15vw;
     margin: 2%;
     color: #232946;
+    border: 1px solid #121629;
 }
 
+#home-button{
+    width: 10vw;
+    margin: 2%;
+    color: #232946;
+    border: 1px solid #121629;
+}
 
 /*---BODY SECTION STYLES ---*/
 #intro-section, #section-three{
     background-color: #232946;
     color: #b8c1ec;
+    border-bottom: 2px solid #121629;
+    border-top: 2px solid #121629;
 }
 #section-two{
     background-color: #d4d8f0;
     color: #232946;
+    border-bottom: 2px solid #121629;
+    border-top: 2px solid #121629;
 }
 
 
