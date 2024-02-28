@@ -92,14 +92,14 @@ root.render(
         {/*top container for button navigation*/}
         <div id='home-jump'></div>
         <StickyHeader></StickyHeader>
+
         {/*top container for site title*/}
         <div id='header-content' className='top-container'>
                 <h1 class="main-title">Swiss Automation Consulting</h1>
         </div>
 
-        <div id='jump-two'></div>
-
         {/* container for site body*/}
+        <div id='jump-two'></div>
         <div className='body-container'>
             <div id='body-content'>
                 <div id='intro-section'>
@@ -108,6 +108,7 @@ root.render(
                     </div>
                 </div>
 
+                {/* container for second section body*/}
                 <div id='section-two'>
                     <div id='section-two-text'>
                         <p>Tis really just some text for testin in sexy sec 2 </p>
@@ -128,7 +129,8 @@ root.render(
                         <p>Tis really just some text for testin in sexy sec 2 </p>
                     </div>
                 </div>
-
+                
+                {/* container for third section body*/}
                 <div id='jump-three'></div>
                 <div id='section-three'>
                     <div id='section-three-text'>
@@ -154,6 +156,7 @@ root.render(
                     </div>
                 </div>
 
+                {/* container for fourth section body*/}
                 <div id='jump-four'></div>
                 <div id='section-four'>
                     <div id='section-four-text'>
@@ -179,6 +182,7 @@ root.render(
                     </div>
                 </div>
 
+                {/* container for fifth section body*/}
                 <div id='jump-five'></div>
                 <div id='section-five'>
                     <div id='section-five-text'>
